@@ -4,10 +4,10 @@
     <head>
         <meta charset="utf-8">
 
-        <title>reveal.js - The HTML Presentation Framework</title>
+        <title>Git and Source Control at Ai</title>
 
-        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-        <meta name="author" content="Hakim El Hattab">
+        <meta name="description" content="Distributed Source Control, Git, and Gitorious at Alexander Interactive">
+        <meta name="author" content="Tim Broder">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -34,6 +34,154 @@
 
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
+                <section>
+                    <section>
+                        <h1>Git and Distributed Source Control</h1>
+                        <img src="img/save_all_the_things.jpeg" alt="Save All The Things!">
+                    </section>
+                    <section>
+                        <h1>We Will Cover</h1>
+                        <ul>
+                            <li>What is traditional source control?</li>
+                            <li>How does distributed differ?</li>
+                            <li>Why Git?</li>
+                            <li>Git at Ai</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>What is source control?</h2>
+                        <ul>
+                            <li>Central location to store code</li>
+                            <li>Version files</li>
+                            <li>Branching: Release and feature management</li>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Why do we need source control?</h2>
+                    </section>
+                    <section>
+                        <h2>Why do we need source control?</h2>
+                        <p>Backups</p>
+                        <img src="img/backups.jpeg" alt="Backup">
+                    </section>
+                    <section>
+                        <h2>Why do we need source control?</h2>
+                        <p>Redundancy</p>
+                        <img src="img/sandy.jpeg" alt="Sandy">
+                    </section>
+                    <section>
+                        <h2>Why do we need source control?</h2>
+                        <p>Parallel Coding</p>
+                        <img src="img/spooning.jpeg" alt="Spooning">
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Traditional Source Control</h2>
+                        <img src="img/traditional.png" alt="Traditional">
+                    </section>
+                    <section>
+                        <h2>Traditional Source Control</h2>
+                        <ul>
+                            <li>svn update</li>
+                            <li>svn commit</li>
+                            <li>svn merge</li>
+                            <li>svn copy</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Traditional Source Control</h2>
+                        <p>Branching and Merging</p>
+                        <img src="img/pumpkin.jpeg" alt="pumpkin">
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Distributed Source Control</h2>
+                    </section>
+                    <section>
+                        <img src="img/distributed.png" alt="Distributed">
+                    </section>
+                  <section>
+                        <h2>Distributed Source Control</h2>
+                        <ul>
+                            <li>Local Commits</li>
+                            <li>True Branching</li>
+                            <li>Smarter Merging</li>
+                            <li>Staging</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Distributed Source Control</h2>
+                        <ul>
+                            <li>git pull</li>
+                            <li>git add</li>
+                            <li>git commit</li>
+                            <li>git branch</li>
+                            <li>git merge</li>
+                            <li>git remote</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <h2>Why Git?</h2>
+                    <ul>
+                        <li>Easy</li>
+                        <li>Most widely used</li>
+                        <li>Wider library of available hooks</li>
+                        <li>More code review tools</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Demo!</h2>
+                    <p><a href="http://try.github.com" target="_blank">try.github.com</a></p>
+                    <img src="img/octocat.png" alt="octocat">
+                </section>
+                <section>
+                    <section>
+                        <h2>git.my.ai</h2>
+                        <img src="img/gitorious.png" alt="octocat">
+                    </section>
+                    <section>
+                        <h2>Gitorious setup</h2>
+                        <ol>
+                            <li>Developer sets up keys (new, or reuse Amazon/Github)
+                            <li>Have Rush set up a new repo</li>
+                            <li>Initial commit</li>
+                        </ol>
+                        <h2>Tools</h2>
+                        <ul>
+                            <li><a href="https://git.my.ai/nuevo-mall/secret-journal" target="_blank">Commit Log</a></li>
+                            <li><a href="https://git.my.ai/nuevo-mall/secret-journal/commit/842c51e1b10845c8f6666d81ea70edd82db14872/diffs/63bc0cef3f25fe66cec470864e2a0235e0766e17" target="_blank">Visual Diff</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Branching Strategy</h2>
+                        <ul>
+                            <li>Initial dev on master</li>
+                            <li>Post launch, prod lives on master</li>
+                            <li>Each new release gets its own branch</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <h2>Helpful links</h2>
+                    <ul>
+                        <li><a href="http://hginit.com/00.html" target="_blank">Un-learning SVN</a></li>
+                        <li><a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">Generating SSH keys</a></li>
+                        <li><a href="http://git-scm.com/book" target="_blank">Pro Git</a></li>
+                        <li><a href="http://mac.github.com/" target="_blank">Github for Mac</a></li>
+                        <li><a href="http://windows.github.com/" target="_blank">Github for Windows</a></li>
+                        <li><a href="http://code.google.com/p/tortoisegit/" target="_blank">Tortoise Git</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Questions?</h2>
+                    <img src="img/inspector.jpg" alt="inspector">
+                </section>
             </div>
 
         </div>
