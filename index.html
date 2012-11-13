@@ -66,27 +66,48 @@
                         <h2>Why do we need source control?</h2>
                         <p>Backups</p>
                         <img src="img/backups.jpeg" alt="Backup">
+                        <aside class="notes">
+                            In case a dev's computer crashes
+                        </aside>
                     </section>
                     <section>
                         <h2>Why do we need source control?</h2>
                         <p>Redundancy</p>
                         <img src="img/sandy.jpeg" alt="Sandy">
+                        <aside class="notes">
+                            In case a dev is stuck at home
+                        </aside>
                     </section>
                     <section>
                         <h2>Why do we need source control?</h2>
                         <p>Parallel Coding</p>
                         <img src="img/spooning.jpeg" alt="Spooning">
+                        <aside class="notes">
+                            <ul>
+                                <li>Dev's work on the same features at the same time.</li>
+                                <li>Merges changes in the same file</li>
+                            </ul>
+                        </aside>
                     </section>
                     <section>
                         <h2>Why do we need source control?</h2>
                         <p>Deploys</p>
                         <img src="img/cowboy.jpg" alt="Cowboy">
+                        <aside class="notes">
+                            NEVER COWBOY CODE PROD!
+                        </aside>
                     </section>
                 </section>
                 <section>
                     <section>
                         <h2>Traditional Source Control</h2>
                         <img src="img/traditional.png" alt="Traditional">
+                          <aside class="notes">
+                                <ul>
+                                    <li>Everyone has the same copy as the repo</li>
+                                    <li>What if you want to commit code that isn't 100% to test diff options? or roll back</li>
+                                </ul>
+                            </aside>
                     </section>
                     <section>
                         <h2>Traditional Source Control</h2>
@@ -96,11 +117,22 @@
                             <li>svn merge</li>
                             <li>svn copy</li>
                         </ul>
+                        <aside class="notes">
+                            <ul>
+                                <li>svn update - pull changes down from the repository</li>
+                                <li>svn commit - send files to the repo</li>
+                                <li>svn merge - merge files (or "branches")</li>
+                                <li>svn copy - copy a file or folder structure (into a "branch")</li>
+                            </ul>
+                        </aside>
                     </section>
                     <section>
                         <h2>Traditional Source Control</h2>
                         <p>Branching and Merging</p>
                         <img src="img/pumpkin.jpeg" alt="pumpkin">
+                          <aside class="notes">
+                                SVN is awefull at complex merges and change tracking
+                            </aside>
                     </section>
                 </section>
                 <section>
@@ -118,6 +150,14 @@
                             <li>Smarter Merging</li>
                             <li>Staging</li>
                         </ul>
+                        <aside class="notes">
+                            <ul>
+                                <li>Can test changes/rollback locally</li>
+                                <li>SVN copies a whole folder structure to "branch." Git creates true deltas</li>
+                                <li>MUCH smarter merging. If you move a method, it will understand you did that vs a delete/create</li>
+                                <li>Makes it easy to not commit everything</li>
+                            </ul>
+                        </aside>
                     </section>
                     <section>
                         <h2>Distributed Source Control</h2>
@@ -126,9 +166,21 @@
                             <li>git add</li>
                             <li>git commit</li>
                             <li>git branch</li>
+                            <li>git checkout</li>
                             <li>git merge</li>
                             <li>git remote</li>
                         </ul>
+                      <aside class="notes">
+                            <ul>
+                                <li>git pull - pull changes from "central" repo</li>
+                                <li>git add - add a file to "stage" for commit</li>
+                                <li>git commit - commit stages changes</li>
+                                <li>git branch - create a branch</li>
+                                <li>git branch - switch to a branch</li>
+                                <li>git merge - merge changes between branches</li>
+                                <li>git remote - configure remote repositories</li>
+                            </ul>
+                        </aside>
                     </section>
                 </section>
                 <section>
@@ -139,6 +191,16 @@
                         <li>Wider library of available hooks</li>
                         <li>More code review tools</li>
                     </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Easy</li>
+                            <li>Most widely used</li>
+                            <li>Hooks: pre commit for validation (linting, etc)</li>
+                            <li>Hooks: post commit for automated testing</li>
+                            <li>Hooks: push hooks for deploys</li>
+                            <li>CODE REVIEWS ARE COMING</li>
+                        </ul>
+                    </aside>
                 </section>
                 <section>
                     <h2>Demo!</h2>
@@ -149,18 +211,20 @@
                     <section>
                         <h2>git.my.ai</h2>
                         <img src="img/gitorious.png" alt="octocat">
+
                     </section>
                     <section>
                         <h2>Gitorious setup</h2>
                         <ol>
                             <li>Developer sets up keys (new, or reuse Amazon/Github)
                             <li>Have Rush set up a new repo</li>
-                            <li>Initial commit</li>
+                            <li>Initial commit or clone</li>
                         </ol>
                         <h2>Tools</h2>
                         <ul>
                             <li><a href="https://git.my.ai/nuevo-mall/secret-journal" target="_blank">Commit Log</a></li>
                             <li><a href="https://git.my.ai/nuevo-mall/secret-journal/commit/842c51e1b10845c8f6666d81ea70edd82db14872/diffs/63bc0cef3f25fe66cec470864e2a0235e0766e17" target="_blank">Visual Diff</a></li>
+                            <li>Jira Integration</li>
                         </ul>
                     </section>
                     <section>
@@ -169,7 +233,6 @@
                             <li>Initial dev on master</li>
                             <li>Post launch, prod lives on master</li>
                             <li>Each new release gets its own branch</li>
-                            <li>Jira Integration</li>
                         </ul>
                     </section>
                 </section>
