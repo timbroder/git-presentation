@@ -1,2 +1,1 @@
-git-presentation
-================
+http://broderboy.github.com/git-presentation/
